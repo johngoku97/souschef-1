@@ -1,0 +1,35 @@
+#search {
+	margin-right: 40px;
+}
+
+.recipe-pic img{
+	display: block;
+	margin: auto;
+}
+
+.recipe-description{
+	margin-top:10px;
+}
+
+.grid {
+	margin-top:10px;
+}
+
+.center-wrapper {
+	text-align: center;
+}
+
+.present-a {
+	background-color: red;
+	color: white;
+}
+
+.present-b {
+	background-color: green;
+	color: white;
+}
+
+.absent {
+	text-decoration: line-through;
+}
+

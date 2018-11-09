@@ -1,0 +1,64 @@
+<!Doctype html>
+
+<html>
+
+<head>
+  <title> Log in </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/log_in.css">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <!-- jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <style>
+    body { background-color:#fafafa; font-family:'Quicksand';}
+  </style>
+</head>
+
+
+<body>
+  <div data-role="header">
+    <!-- Header buttons -->
+    <a href="javascript:history.back()" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+    <a data-ajax="false" href="index.html" class="ui-btn-right ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
+    <h1>Log In</h1>
+  </div><!-- /header -->
+
+<div class="contents"
+  <form action="action_page.php">
+
+    <div class="imgcontainer">
+      <img src="img/fake_avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+    <!--  <label for="uname"><b>Username</b></label>-->
+      <input id="user" type="text" placeholder="Username" name="uname" required>
+
+    <!--  <label for="psw"><b>Password</b></label> -->
+      <input id="pw" type="password" placeholder="Password" name="psw" required>
+
+
+      <div class="box">
+      <label class="remember">
+        <input id="remember" type="checkbox" checked="checked" name="remember"> Remember me </input>
+      </label>
+
+    </div>
+
+      <a href="index.html" data-ajax="false">
+      <button id="submit" type="submit">Log in</button>
+    </a>
+    </div>
+  </div>
+
+
+
+  </form>
+
+
+</html>

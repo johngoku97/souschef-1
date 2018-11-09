@@ -1,0 +1,20 @@
+.recipe-pic img{
+	display: block;
+	margin: auto;
+}
+
+.recipe-description{
+	margin-top:10px;
+}
+
+.grid {
+	margin-top:10px;
+}
+
+.center-wrapper {
+	text-align: center;
+}
+
+#search {
+	margin-right: 40px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cook by Ingredients</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/ingredients.css">
+  <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+  <script src="js/ingredients.js"></script>
+
+  <!-- jQuery -->
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+  <!-- jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <style>
+    body { background-color:#fafafa; font-family:'Quicksand';}
+  </style>
+</head>
+
+
+<body>
+  <div data-role="header">
+    <!-- Header buttons -->
+    <a href="javascript:history.back()" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+    <a data-ajax="false" href="index.html" class="ui-btn-right ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
+    <h1>My Ingredients</h1>
+  </div><!-- /header -->
+
+
+  <div class="contents">
+    <form class="add-items">
+      <input type="text" class="form-control" id="input" placeholder="Type ingredient" data-inline="true" data-wrapper-class="ui-custom">
+      <button class="add" type="submit" data-inline"true" data-mini="true">Add</button>
+    </form>
+
+    <ul id="list-items"></ul>
+  </div>
+
+  <div class="find" >
+    <a href="recipe-list.html" data-ajax="false">
+    <input type="button" value="Find Recipe" id="start" data-inline="true"/>
+  </div>
+</a>
+
+
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
+</body>
+</html>

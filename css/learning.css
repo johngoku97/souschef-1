@@ -1,0 +1,23 @@
+.p page-description{
+	margin-top:10px;
+  text-align: center;
+}
+
+.grid {
+	margin-top:10px;
+}
+
+.center-wrapper {
+	text-align: center;
+}
+#demo-borders .ui-collapsible-heading .ui-btn {
+	border-top-width: 1px !important;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#demo-borders .ui-collapsing-heading .ui-btn .listview {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	align-content: center;
+}
