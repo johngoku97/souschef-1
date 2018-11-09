@@ -14,10 +14,15 @@
 	border-top-width: 1px !important;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #demo-borders .ui-collapsing-heading .ui-btn .listview {
 	border-top-width: 1px;
 	border-bottom-width: 1px;
 	align-content: center;
+	
 }
