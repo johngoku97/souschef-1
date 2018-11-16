@@ -55,6 +55,15 @@ function validate() {
         }
     }
 }
+$(document).ready(function() {
+    console.log('hello world');
+  
+    // compile the template
+    var source   = $("#entry-template").html();
+    var template = Handlebars.compile(source);
+  
+    var parentDiv = $("#templatedProjects");
+  
 
 function setDiet() {
     localStorage.setItem("myDiet", JSON.stringify(settings1));
