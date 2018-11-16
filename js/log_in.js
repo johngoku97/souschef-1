@@ -37,7 +37,7 @@ var settings3 = [
     }
 ]
 
-var source = $("#profile.html")
+
 
 
 
@@ -64,24 +64,24 @@ $(document).ready(function() {
   
     var parentDiv = $("#templatedProjects");
   
+},
 
 function setDiet() {
     localStorage.setItem("myDiet", JSON.stringify(settings1));
     JSON.parse(localStorage.getItem("myDiet"));
-}
+},
 function setAllergen(){
     localStorage.setItem("myAllergens", JSON.stringify(settings2));
     JSON.parse(localStorage.getItem("myAllergens"));
-}
+},
 function setFavorites(){
     localStorage.setItem("myFavorites", JSON.stringify(settings3));
     JSON.parse(localStorage.getItem("myFavorites"));
-}
+},
 
 function login() {
          if (validate() == true) {
              localStorage.setItem("log_in", document.getElementById("user").value);
          }
 
-
-}
+        });
