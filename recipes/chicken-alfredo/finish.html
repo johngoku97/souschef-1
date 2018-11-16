@@ -25,16 +25,23 @@
                 <img src="https://placekitten.com/300/200" />
             </div>
             <div>
-                <a class="ui-btn ui-shadow ui-corner-all">Add to Favorites</a>
-                <a data-ajax="false" href="../../index.html" class="ui-btn ui-shadow ui-corner-all">Back to Home</a>
+                <button onclick="change()" id="favorites"><p id="btn-name">Add to Favorites</p></button>
+                <a data-ajax="false" href="../../index.html" class="ui-btn ui-shadow ui-corner-all"><p>Back to Home</p></a>
             </div>
         </div><!-- /content -->
 
-        <!-- 
+
         <div data-role="footer" class="center-wrapper">
-            <a class="ui-btn ui-shadow ui-corner-all">INSERT FOOTER</a>
-        </div> /footer -->
- 
+        </div><!-- /footer -->
     </div><!-- /page -->
+
+    <script>
+        function change() {
+            document.getElementById("btn-name").innerHTML = "Added to Favorites";
+            document.getElementById("favorites").style.backgroundColor = "#0000FF";
+            document.getElementById("favorites").style.color = "white";
+        }
+    </script>
+
 </body>
 </html>

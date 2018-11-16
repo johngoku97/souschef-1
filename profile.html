@@ -10,6 +10,7 @@
     <script src="js/log_in.js"></script>
 </head>
 <body>
+        <script id="entry-template" type="text/x-handlebars-template">
     <div data-role="page">
  
         <div data-role="header">
@@ -25,11 +26,17 @@
             <div class="center-wrapper">
             	Meow I'm a cat that likes to cook
             </div>
+            <div class = "center-wrapper">
+                <h4>
+                    Diet
+                    
+                </h4>
+            </div>
             <div class="center-wrapper">
                 <h4>
                     Allergens
                 </h4>
-
+                
             </div>
             <div class="center-wrapper">
                 <h4>
@@ -41,8 +48,10 @@
  
         <div data-role="footer" class="center-wrapper">
             <a data-ajax="false" href="log_in.html" class="ui-btn ui-icon-forbidden ui-btn-icon-left ui-shadow ui-corner-all" id="search" data-role="button" role="button">Sign Out</a>
+        </script>
         </div><!-- /footer -->
  
     </div><!-- /page -->
+    <script src="js/handlebars-v4.0.11.js"></script>
 </body>
 </html>
