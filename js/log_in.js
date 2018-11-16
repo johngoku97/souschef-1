@@ -36,11 +36,7 @@ var settings3 = [
         favorites: "Spinach Enchiladas"
     }
 ]
-
-
-
-
-
+/*
 function validate() {
     var user = document.getElementById("user").value
     var pw = document.getElementById("pw").value
@@ -54,18 +50,17 @@ function validate() {
             return false;
         }
     }
-}
-$(document).ready(function() {
-    console.log('hello world');
-  
-    // compile the template
-    var source   = $("#entry-template").html();
-    var template = Handlebars.compile(source);
-  
-    var parentDiv = $("#templatedProjects");
-  
-},
+}*/
 
+
+$(document).ready(function() {
+  var username = document.getElementById('user').value;
+  var arr = [username];
+  localStorage.setItem('user', JSON.stringify(arr));
+  console.log(localStorage.getItem('user'));
+
+
+/* YM stuff
 function setDiet() {
     localStorage.setItem("myDiet", JSON.stringify(settings1));
     JSON.parse(localStorage.getItem("myDiet"));
@@ -83,5 +78,6 @@ function login() {
          if (validate() == true) {
              localStorage.setItem("log_in", document.getElementById("user").value);
          }
-
-        });
+       }
+       */
+});

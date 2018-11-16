@@ -2,56 +2,78 @@
 <html>
 <head>
     <title>Profile</title>
-    <link rel="stylesheet" type="text/css" href="css/finish.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+
+
+    <!-- jQuery -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery Mobile -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script src="js/log_in.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <style>
+      body { background-color:#fafafa; font-family:'Quicksand';}
+    </style>
+
 </head>
+
+
 <body>
-        <script id="entry-template" type="text/x-handlebars-template">
+
     <div data-role="page">
- 
+      <!-- Header -->
         <div data-role="header">
             <a href="javascript:history.back()" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext">Back</a>
             <a data-ajax="false" href="index.html" class="ui-btn-right ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
             <h1>Profile</h1>
         </div><!-- /header -->
 
+
         <div role="main" class="ui-content center-wrapper">
+
+          <!-- Handlebar script -->
+        <script id="entry-template" type="text/x-handlebars-template">
             <div class="recipe-pic center-wrapper">
-                <img src="https://placekitten.com/300/200" />
+              <h1>{{title}}</h1>
+                <img id="avatar" src="img/fake_avatar.jpg" />
             </div>
             <div class="center-wrapper">
             	Meow I'm a cat that likes to cook
             </div>
-            <div class = "center-wrapper">
-                <h4>
-                    Diet
-                    
-                </h4>
-            </div>
-            <div class="center-wrapper">
-                <h4>
-                    Allergens
-                </h4>
-                
-            </div>
-            <div class="center-wrapper">
-                <h4>
-                    Favorites
-                </h4>
-                
-            </div>
+          </script>
+
+          <!-- Recipe Template Block -->
+          <div id="templatedProjects">
+
+          </div>
+
+
         </div><!-- /content -->
- 
+
+<!--
         <div data-role="footer" class="center-wrapper">
-            <a data-ajax="false" href="log_in.html" class="ui-btn ui-icon-forbidden ui-btn-icon-left ui-shadow ui-corner-all" id="search" data-role="button" role="button">Sign Out</a>
-        </script>
-        </div><!-- /footer -->
- 
+            <a data-ajax="false" href="log_in.html" >
+            class="ui-btn ui-icon-forbidden ui-btn-icon-left ui-shadow ui-corner-all" id="search" data-role="button" role="button">Sign Out</a>
+        </div><!footer -->
+
+        <div class="find" >
+
+          <a href="log_in.html" data-ajax="false">
+          <input onclick="logout()" type="button" value="Log out" id="start" data-inline="true"/>
+        </div>
+
+
     </div><!-- /page -->
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+    <script src="js/profile.js"></script>
     <script src="js/handlebars-v4.0.11.js"></script>
 </body>
 </html>

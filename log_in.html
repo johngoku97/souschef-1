@@ -29,38 +29,36 @@
     <h1>Log In</h1>
   </div><!-- /header -->
 
-<div class="contents"
-  <form action="action_page.php">
+  <div class="contents"
+    <form action="action_page.php">
 
-    <div class="imgcontainer">
-      <img src="img/fake_avatar.png" alt="Avatar" class="avatar">
+      <div class="imgcontainer">
+        <img src="img/fake_avatar.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <!--  <label for="uname"><b>Username</b></label>-->
+        <input id="user" type="text" placeholder="Username" name="uname" required>
+
+        <!--  <label for="psw"><b>Password</b></label> -->
+        <input id="pw" type="password" placeholder="Password" name="psw" required>
+
+        <!-- Remember me box -->
+        <div class="box">
+          <label class="remember">
+            <input id="remember" type="checkbox" checked="checked" name="remember"> Remember me </input>
+          </label>
+        </div>
+
+        <a href="index.html" data-ajax="false">
+          <button id="submit" type="submit" >Log in</button>
+        </a>
+      </div>
     </div>
-
-    <div class="container">
-    <!--  <label for="uname"><b>Username</b></label>-->
-      <input id="user" type="text" placeholder="Username" name="uname" required>
-
-    <!--  <label for="psw"><b>Password</b></label> -->
-      <input id="pw" type="password" placeholder="Password" name="psw" required>
-
-
-      <div class="box">
-      <label class="remember">
-        <input id="remember" type="checkbox" checked="checked" name="remember"> Remember me </input>
-      </label>
-
-    </div>
-
-
-      <data-ajax="false">
-      <button id="submit" type="submit" onclick = validate()>Log in</button>
-    </a>
-    </div>
-  </div>
-
-
 
   </form>
+
+</body>
 
 
 </html>

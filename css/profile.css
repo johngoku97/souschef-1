@@ -1,0 +1,29 @@
+.imgcontainer {
+  text-align: center;
+}
+
+#avatar {
+  width: 50%;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.center-wrapper {
+	text-align: center;
+}
+.selected {
+	color: white;
+	background: blue;
+}
+
+.find {
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+  text-align: center;
+  padding-top: 10px;
+}

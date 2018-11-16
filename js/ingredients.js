@@ -45,7 +45,6 @@ $(document).ready(function () {
 		else { // when item gets checked
 			// sets checked attribute to check
 			$(this).attr('checked', 'checked');
-
 			// adds item to array
 			arrItems.push(word);
 		}
