@@ -11,7 +11,7 @@
 <body>
     <div data-role="page">
  
-        <div data-role="header">
+        <div data-role="header" data-position="fixed">
             <a href="javascript:history.back()" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext">Back</a>
             <a data-ajax="false" href="../../index.html" class="ui-btn-right ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
             <!-- <a data-ajax="false" class="ui-btn-right ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all" id="search" data-role="button" role="button">Search</a> -->
@@ -45,7 +45,7 @@
                     <h3>Allergens</h3>
                 </div>
                 <div class="ui-body ui-body-a ui-grid-b center-wrapper">
-                    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:20px">Dairy</div></div>
+                    <div class="ui-block-a"><div class="ui-bar ui-bar-a absent" style="height:20px">Dairy</div></div>
                     <div class="ui-block-b"><div class="ui-bar ui-bar-a absent" style="height:20px">Gluten</div></div>
                     <div class="ui-block-c"><div class="ui-bar ui-bar-a absent" style="height:20px">Eggs</div></div>
                     <div class="ui-block-a"><div class="ui-bar ui-bar-a absent" style="height:20px">Shell</div></div>
@@ -68,7 +68,7 @@
 
         </div><!-- /content -->
  
-        <div data-role="footer" class="center-wrapper">
+        <div data-role="footer" class="center-wrapper" data-position="fixed">
             <a data-ajax="false" href="tools.html" class="ui-btn ui-shadow ui-corner-all">Start Cooking</a>
         </div><!-- /footer -->
  
