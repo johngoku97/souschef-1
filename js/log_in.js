@@ -1,12 +1,9 @@
 var login = [
     {
         user: "pizzacat",
-        pw: "eatpizza",
-    },
-    {
-        user: "pgbovine",
-        pw: "bovinepg"
+        pw: "eatpizza"
     }
+
 ]
 //names are subject to change
 var settings1 = [
@@ -36,7 +33,7 @@ var settings3 = [
         favorites: "Spinach Enchiladas"
     }
 ]
-/*
+
 function validate() {
     var user = document.getElementById("user").value
     var pw = document.getElementById("pw").value
@@ -50,7 +47,7 @@ function validate() {
             return false;
         }
     }
-}*/
+}
 
 
 $(document).ready(function() {
@@ -80,4 +77,4 @@ function login() {
          }
        }
        */
-});
+    })
