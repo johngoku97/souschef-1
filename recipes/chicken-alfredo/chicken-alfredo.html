@@ -30,7 +30,7 @@
                 <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:20px">Easy</div></div>
             </div>
             <div class="ui-grid-solo">
-                <div class="ui-block-a"><div class="ui-bar ui-bar-a center-wrapper" style="height:20px">Add to Favorites</div></div>
+                <button onclick="change()" id="favorites"><p id="btn-name">Add to Favorites</p></button>
             </div>
 
             <!-- Description -->
@@ -73,5 +73,13 @@
         </div><!-- /footer -->
  
     </div><!-- /page -->
+
+    <script>
+        function change() {
+            document.getElementById("btn-name").innerHTML = "Added to Favorites";
+            document.getElementById("favorites").style.backgroundColor = "#0000FF";
+            document.getElementById("favorites").style.color = "white";
+        }
+    </script>
 </body>
 </html>
