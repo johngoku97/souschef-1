@@ -1,8 +1,6 @@
 var simpleData = {'title': ''};
 
 
-
-
 $(document).ready(function() {
   /*$('#start').onclick = function() {
     console.log("hello");
@@ -21,6 +19,7 @@ $(document).ready(function() {
   // for loop to get all the names in the title
 
   simpleData = {'title': arrItems[0] + "'s " + "Profile"};
+  console.log(arrItems[0]);
 
 
 
