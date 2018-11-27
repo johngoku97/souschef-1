@@ -2,6 +2,10 @@ body, html {
 	background-color: White;
 }
 
+.center-wrapper {
+	text-align: center;
+}
+
 /**
 	HI-RES Screen
  **/
@@ -31,7 +35,6 @@ body, html {
 	.title {
 		color: DarkCyan;
 		text-align: center;
-		text-decoration: underline;
 		margin-top: -20px;
 		margin-bottom: -15px;
 	}
@@ -81,7 +84,6 @@ body, html {
 	.title {
 		color: DarkCyan;
 		text-align: center;
-		text-decoration: underline;
 		margin-top: -30px;
 		margin-bottom: -30px;
 	}
@@ -131,7 +133,6 @@ body, html {
 	.title {
 		color: DarkCyan;
 		text-align: center;
-		text-decoration: underline;
 		margin-top: -20px;
 		margin-bottom: -20px;
 	}

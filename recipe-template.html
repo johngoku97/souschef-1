@@ -31,7 +31,7 @@
             </div>
 
             <div class="ui-grid-solo">
-                <div class="ui-block-a"><div class="ui-bar ui-bar-a center-wrapper" style="height:20px">Add to Favorites</div></div>
+                <button onclick="change()" id="favorites"><p id="btn-name">Add to Favorites</p></button>
             </div>
 
             <div class="recipe-description ui-body ui-body-a ui-corner-all">
@@ -44,12 +44,12 @@
                     <h3>Allergens</h3>
                 </div>
                 <div class="ui-body ui-body-a ui-grid-b center-wrapper">
-                    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:20px">Dairy</div></div>
-                    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:20px">Gluten</div></div>
-                    <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:20px">Eggs</div></div>
-                    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:20px">Shell</div></div>
-                    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:20px">Nuts</div></div>
-                    <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:20px">Soy</div></div>
+                    <div class="ui-block-a"><div class="ui-bar ui-bar-a absent" style="height:20px">Dairy</div></div>
+                    <div class="ui-block-b"><div class="ui-bar ui-bar-a absent" style="height:20px">Gluten</div></div>
+                    <div class="ui-block-c"><div class="ui-bar ui-bar-a absent" style="height:20px">Eggs</div></div>
+                    <div class="ui-block-a"><div class="ui-bar ui-bar-a absent" style="height:20px">Shell</div></div>
+                    <div class="ui-block-b"><div class="ui-bar ui-bar-a absent" style="height:20px">Nuts</div></div>
+                    <div class="ui-block-c"><div class="ui-bar ui-bar-a absent" style="height:20px">Soy</div></div>
                 </div>
             </div>
 
@@ -58,9 +58,9 @@
                     <h3>Diet Type</h3>
                 </div>
                 <div class="ui-body ui-body-a ui-grid-b center-wrapper">
-                    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:20px">Vegan</div></div>
-                    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:20px">Keto</div></div>
-                    <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:20px">Paleo</div></div>
+                    <div class="ui-block-a"><div class="ui-bar ui-bar-a absent" style="height:20px">Vegan</div></div>
+                    <div class="ui-block-b"><div class="ui-bar ui-bar-a absent" style="height:20px">Keto</div></div>
+                    <div class="ui-block-c"><div class="ui-bar ui-bar-a absent" style="height:20px">Paleo</div></div>
                 </div>
             </div>
 
@@ -71,5 +71,13 @@
         </div><!-- /footer -->
  
     </div><!-- /page -->
+
+    <script>
+        function change() {
+            document.getElementById("btn-name").innerHTML = "Added to Favorites";
+            document.getElementById("favorites").style.backgroundColor = "#0000FF";
+            document.getElementById("favorites").style.color = "white";
+        }
+    </script>
 </body>
 </html>
